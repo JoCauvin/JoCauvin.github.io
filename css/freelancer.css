@@ -191,8 +191,14 @@ section h2 {
 }
 
 section.about {
-  color: #fff;
+  color: white;
   background: url(../img/fond_about.jpg) no-repeat center center fixed; 
+  background-size: cover; 
+}
+
+section.text {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover; 
 }
 
@@ -404,10 +410,9 @@ footer .footer-below {
 }
 
 .scroll-top {
-    z-index: 1049;
     position: fixed;
-    right: 2%;
-    bottom: 2%;
+    right: 4%;
+    bottom: 4%;
     width: 50px;
     height: 50px;
 }
@@ -421,7 +426,7 @@ footer .footer-below {
 }
 
 .scroll-top .btn:focus {
-    outline: 0;
+    outline: 1;
 }
 
 .portfolio-modal .modal-content {
