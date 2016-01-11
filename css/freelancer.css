@@ -220,6 +220,11 @@ section.experience {
   background: url(../img/fond_experience.jpg) no-repeat center center fixed; 
   background-size: cover; 
 }
+section.formation {
+  color: #fff;
+  background: url(../img/fond_formation.jpg) no-repeat center center fixed; 
+  background-size: cover; 
+}
 
 
 section.contact {
