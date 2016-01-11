@@ -60,6 +60,13 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
+table { border-collapse: separate; border-spacing: 10px; }
+
+td /* Toutes les cellules des tableaux... */
+{
+    border: 2px ; /* auront une bordure de 1px */
+}
+
 hr.star-light {
     border-color: #fff;
 }
@@ -85,7 +92,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #02616b;
+  background: url(../img/charles.jpg) no-repeat center center; 
 }
 
 header .container {
@@ -188,6 +195,12 @@ section {
 section h2 {
     margin: 0;
     font-size: 3em;
+}
+
+section.traveler {
+  color: white;
+  background: url(../img/fond_about.jpg) no-repeat center center fixed; 
+  background-size: cover; 
 }
 
 section.about {
