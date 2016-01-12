@@ -92,7 +92,12 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-  background: url(../img/charles.jpg) no-repeat center center; 
+	  background-image: url(../img/charles.jpg);
+   background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
 }
 
 header .container {
