@@ -228,6 +228,74 @@ section.fond_bleu {
   background-size: cover; 
 }
 
+@media (min-width: 1200px) {
+section.fond_1 {
+background-color: #3c74b8;
+min-height: 250px;	
+  }
+}
+@media (min-width: 1200px) {
+section.fond_2 {
+background-color: #3c73b7;
+min-height: 250px;	
+  }
+}
+@media (min-width: 1200px) {
+section.fond_3 {
+background-color: #3c71b2;
+min-height: 250px;	
+  }
+}
+@media (min-width: 1200px) {
+section.fond_4 {
+background-color: #34629b;
+min-height: 250px;	
+  }
+}@media (min-width: 1200px) {
+section.fond_5 {
+background-color: #2b4f7d;
+min-height: 250px;	
+  }
+}@media (min-width: 1200px) {
+section.fond_6 {
+background-color: #1f3958;
+min-height: 250px;	
+  }
+}
+
+
+
+
+
+
+  section.fond_1 {
+padding: 1px 1px;
+  background-color: #3c74b8; 
+ }
+ section.fond_2 {
+padding: 1px 1px;
+  background-color: #3c73b7;
+}
+section.fond_3 {
+padding: 1px 1px;
+  background-color: #3c71b2;
+}
+section.fond_4 {
+  padding: 1px 1px;
+  background-color: #34629b;
+}
+section.fond_5 {
+padding: 1px 1px;
+  background-color: #2b4f7d;
+}
+
+section.fond_6 {
+padding: 1px 1px;
+  background-color: #1f3958;
+    background-size: 4em; 
+}
+
+
 section.experience {
   color: #fff;
   background: url(../img/fond_experience.jpg) no-repeat center center fixed; 
