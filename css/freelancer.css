@@ -11,7 +11,12 @@ body {
     overflow-x: hidden;
 }
 
-.element	{ position:fixed; top:2%; right:2%; }
+
+.element { 
+position:absolute;
+ top:2%;
+ right:2%;
+ }
 
 
 p {
