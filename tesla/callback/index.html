@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connexion Tesla</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#15181d;color:#eef1f5;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:560px;padding:32px 24px}
+h1{font-weight:500;font-size:22px;margin:0 0 8px}
+p{color:#b8c0cc;margin:0 0 16px}
+code{display:block;word-break:break-all;background:#232831;border-radius:8px;padding:14px;font-size:14px;color:#fff}
+button{margin-top:14px;background:#eef1f5;color:#15181d;border:0;border-radius:8px;padding:10px 16px;font-size:15px;cursor:pointer}
+</style>
+</head>
+<body>
+<main>
+<h1 id="titre">Connexion Tesla</h1>
+<p id="aide">Copie le code ci-dessous et colle-le dans la fenêtre PowerShell qui l'attend.</p>
+<code id="code">…</code>
+<button id="copier" type="button">Copier le code</button>
+</main>
+<script>
+var q = new URLSearchParams(location.search);
+var code = q.get('code'), err = q.get('error');
+var el = document.getElementById('code');
+if (code) { el.textContent = code; }
+else {
+  document.getElementById('titre').textContent = 'Connexion non aboutie';
+  document.getElementById('aide').textContent = 'Tesla a renvoyé : ' + (err || 'aucun code') + '. Relance le script de connexion.';
+  el.style.display = 'none'; document.getElementById('copier').style.display = 'none';
+}
+document.getElementById('copier').onclick = function () {
+  navigator.clipboard.writeText(code).then(function () { document.getElementById('copier').textContent = 'Copié ✓'; });
+};
+// Ne garde pas le code dans l'historique du navigateur.
+history.replaceState(null, '', location.pathname);
+</script>
+</body>
+</html>
